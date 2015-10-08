@@ -1,0 +1,1 @@
+# meteor-easy-service-config
