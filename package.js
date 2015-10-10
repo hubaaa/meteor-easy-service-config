@@ -1,10 +1,10 @@
 Package.describe({
-  name: 'easy-service-config',
-  version: '0.0.1',
+  name: 'hubaaa:easy-service-config',
+  version: '0.1.0',
   // Brief, one-line summary of the package.
-  summary: '',
+  summary: 'Automatically loads the accounts-whatever service configurations from Meteor.settings.',
   // URL to the Git repository containing the source code for this package.
-  git: '',
+  git: 'https://github.com/hubaaa/meteor-easy-service-config',
   // By default, Meteor will default to using README.md for documentation.
   // To avoid submitting documentation, set this field to null.
   documentation: 'README.md'
@@ -19,7 +19,7 @@ Package.onUse(function(api) {
     'service-configuration',
     'practicalmeteor:loglevel@1.2.0_2',
     'practicalmeteor:chai@2.1.0_1',
-    'easy-meteor-settings'
+    'hubaaa:easy-meteor-settings@0.1.0'
   ], 'server');
 
   api.addFiles('EasyServiceConfig.coffee', 'server');
@@ -33,7 +33,7 @@ Package.onTest(function(api) {
   ], 'server');
 
   api.use('tinytest');
-  api.use('easy-service-config');
+  api.use('hubaaa:easy-service-config@0.1.0');
 
   api.addFiles('EasyServiceConfigTest.coffee', 'server');
 });
