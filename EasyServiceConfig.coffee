@@ -1,11 +1,11 @@
-log = new ObjectLogger('hubaaa.EasyServiceConfig', 'info')
+log = new ObjectLogger('practical.EasyServiceConfig', 'info')
 
-class hubaaa.EasyServiceConfig
+class practical.EasyServiceConfig
 
   instance = null
 
   @get: ->
-    instance ?= new hubaaa.EasyServiceConfig()
+    instance ?= new practical.EasyServiceConfig()
 
 # Dependency injection pattern, mainly for unit tests
   constructor: (@collection = ServiceConfiguration.configurations, @easySettings = EasyMeteorSettings)->
@@ -32,4 +32,4 @@ class hubaaa.EasyServiceConfig
       log.return()
 
 
-@EasyServiceConfig = hubaaa.EasyServiceConfig.get()
+@EasyServiceConfig = practical.EasyServiceConfig.get()
