@@ -19,6 +19,7 @@ class practical.EasyServiceConfig
     try
       log.enter('load')
       serviceConfigurations = @easySettings.getPrivateSetting 'serviceConfigurations'
+      log.info 'serviceConfigurations:', serviceConfigurations
       return if not serviceConfigurations?
       expect(serviceConfigurations, 'Meteor.settings.serviceConfigurations').to.be.an 'object'
       for service, config of serviceConfigurations

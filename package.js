@@ -33,7 +33,7 @@ Package.onTest(function(api) {
   api.use('practicalmeteor:easy-service-config@0.1.1');
 
   // Add packages you want to use in your test
-  api.use(['underscore', 'coffeescript']);
+  api.use(['underscore', 'coffeescript', 'service-configuration']);
 
   // Add the mocha unit testing framework
   api.use('practicalmeteor:mocha@2.1.0_7');
